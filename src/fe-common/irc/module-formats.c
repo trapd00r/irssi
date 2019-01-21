@@ -67,11 +67,11 @@ FORMAT_REC fecommon_irc_formats[] = {
 	{ "joinerror_duplicate", "Channel {channel $0} already exists - cannot create it", 1, { 0 } },
 	{ "channel_rejoin", "Channel {channel $0} is temporarily unavailable, this is normally because of netsplits. Irssi will now automatically try to rejoin back to this channel until the join is successful. Use /RMREJOINS command if you wish to abort this.", 1, { 0 } },
 	{ "inviting", "Inviting {nick $0} to {channel $1}", 2, { 0, 0 } },
-	{ "channel_created", "Channel {channelhilight $0} created $1", 2, { 0, 0 } },
+	{ "channel_created", "", 2, { 0, 0 } },
 	{ "url", "Home page for {channelhilight $0}: $1", 2, { 0, 0 } },
-	{ "topic", "Topic for {channelhilight $0}: $1", 2, { 0, 0 } },
+	{ "topic", "", 2, { 0, 0 } },
 	{ "no_topic", "No topic set for {channelhilight $0}", 1, { 0 } },
-	{ "topic_info", "Topic set by {nick $0} {nickhost $2} {comment $1}", 3, { 0, 0, 0 } },
+	{ "topic_info", "", 3, { 0, 0, 0 } },
         { "chanmode_change", "mode/{channelhilight $0} {mode $1} by {nick $2}", 4, { 0, 0, 0, 0 } },
         { "server_chanmode_change", "{netsplit ServerMode}/{channelhilight $0} {mode $1} by {nick $2}", 3, { 0, 0, 0 } },
         { "channel_mode", "mode/{channelhilight $0} {mode $1}", 2, { 0, 0 } },
@@ -85,7 +85,7 @@ FORMAT_REC fecommon_irc_formats[] = {
 	{ "invitelist", "{channel $0}: invite {ban $1}", 2, { 0, 0 } },
 	{ "invitelist_long", "{channel $0}: invite {ban $1} {comment by {nick $2}, $3 secs ago}", 4, { 0, 0, 0, 1 } },
 	{ "no_such_channel", "{channel $0}: No such channel", 1, { 0 } },
-	{ "channel_synced", "Join to {channel $0} was synced in {hilight $1} secs", 2, { 0, 2 } },
+	{ "channel_synced", "", 2, { 0, 2 } },
 
 	/* ---- */
 	{ NULL, "Nick", 0 },
